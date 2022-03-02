@@ -17,14 +17,6 @@ DOC
 }
 
 
-remove-pycache() {
-:<<DOC
-    Removes python cache directories
-DOC
-    ( find . -depth -name __pycache__ | xargs rm -r )
-}
-
-
 check-black() {
 :<<DOC
     Runs "black" code analyser
@@ -45,7 +37,6 @@ main() {
 :<<DOC
     Runs "main" code analyser
 DOC
-    remove-pycache
     check-black && check-flake
 }
 

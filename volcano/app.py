@@ -59,7 +59,7 @@ class VolcanoMap:
         self._volcanoes_group = volcano_group
         self._population_group = population_group
 
-    def build(self, save_as: str) -> None:
+    def build(self) -> None:
         for lat, lon, elev in self._volcanoes.mapped_coordinates():
             self._volcanoes_group.add_child(
                 folium.CircleMarker(
@@ -88,7 +88,9 @@ class VolcanoMap:
         for group in self._volcanoes_group, self._population_group:
             self._map.add_child(group)
         self._map.add_child(folium.LayerControl())
-        self._map.save(save_as)
+
+    def save(self, as_file: str) -> None:
+        return self._map.save(as_file)
 
 
 def main():
@@ -99,7 +101,8 @@ def main():
         volcano_group=folium.FeatureGroup(name='Volcanoes'),
         population_group=folium.FeatureGroup(name='Population'),
     )
-    volcano_map.build(save_as='volcanoes.html')
+    volcano_map.build()
+    volcano_map.save(as_file='volcanoes.html')
 
 
 if __name__ == '__main__':

@@ -13,7 +13,7 @@
 ## Tools
 
 ### Production
-- python 3.7+
+- python 3.8+
 - [folium](https://python-visualization.github.io/folium/) 
 - [pandas](https://pandas.pydata.org)
 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 python volcano/app.py
 ```
 
-Then please open `volcano.html` file in your browser.
+Then please open `volcanoes.html` file in your browser.
 
 **[⬆ back to top](#volcano-mapping)**
 
