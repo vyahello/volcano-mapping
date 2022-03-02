@@ -24,7 +24,7 @@
 
 ## Usage
 
-TBD
+![Screenshot](demo.png)
 
 ### Source code
 

@@ -89,8 +89,8 @@ class VolcanoMap:
             self._map.add_child(group)
         self._map.add_child(folium.LayerControl())
 
-    def save(self, as_file: str) -> None:
-        return self._map.save(as_file)
+    def save(self, as_file: Path) -> None:
+        return self._map.save(as_file.as_posix())
 
 
 def main():
@@ -102,7 +102,7 @@ def main():
         population_group=folium.FeatureGroup(name='Population'),
     )
     volcano_map.build()
-    volcano_map.save(as_file='volcanoes.html')
+    volcano_map.save(as_file=CUR_PATH.parent / 'volcanoes.html')
 
 
 if __name__ == '__main__':
