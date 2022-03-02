@@ -31,3 +31,6 @@ build/
 
 # db
 *.sqlite
+
+# output file
+*.html

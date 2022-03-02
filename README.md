@@ -8,7 +8,7 @@
 
 # Volcano mapping
 
-> A web map example of countries population and particular volcanoes based on 
+> A web map example of countries population and particular volcanoes based on `folium` and `pandas`.
 
 ## Tools
 
@@ -76,7 +76,7 @@ I would highly appreciate any contribution and support. If you are interested to
 
 ### What's next
 
-All recent activities and ideas are described at project [issues](https://github.com/vyahello/pypi/issues) page. 
+All recent activities and ideas are described at project [issues](https://github.com/vyahello/volcano-mapping/issues) page. 
 If you have ideas you want to change/implement please do not hesitate and create an issue.
 
 **[⬆ back to top](#volcano-mapping)**
